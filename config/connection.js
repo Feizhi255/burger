@@ -1,5 +1,8 @@
 var mysql = require("mysql");
-const password = require('../password');
+// const password = require('../password');
+require('dotenv').config();
+
+let password = process.env.PASSWORD
 
 var connection = mysql.createConnection({
   host: "localhost",
